@@ -13,8 +13,11 @@ import "react-dates/lib/css/_datepicker.css";
 import moment from "moment";
 moment.locale("fr-ch");
 
+//firebase
+import "./firebase/firebase";
+
+
 const store = configureStore();
-console.log('test');
 const state = store.getState();
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
 
